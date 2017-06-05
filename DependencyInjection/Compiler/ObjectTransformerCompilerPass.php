@@ -1,17 +1,16 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace SymfonyNotes\ObjectTransformerBundle\DependencyInjection\Compiler;
 
-use GlobalGames\Component\ObjectTransformer\ObjectTransformerInterface;
-use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+use SymfonyNotes\ObjectTransformerBundle\Transformer\ObjectTransformerInterface;
 
 /**
- * Class ObjectTransformerCompilerPass
- * @package SymfonyNotes\ObjectTransformerBundle\DependencyInjection\Compiler
+ * Class ObjectTransformerCompilerPass.
  */
 class ObjectTransformerCompilerPass implements CompilerPassInterface
 {
