@@ -1,0 +1,38 @@
+{
+  "name": "symfony-notes/object-transformer-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony Object Transformer Bundle",
+  "keywords": ["symfony", "bundle", "object transformer", "json", "xml"],
+  "homepage": "https://github.com/symfony-notes/object-transformer-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roman Zhuravel",
+      "email": "zhooravell@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SymfonyNotes\\ObjectTransformerBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "require": {
+    "php": ">=7.0.11",
+    "symfony/framework-bundle": "~3.0",
+    "sensio/framework-extra-bundle": "^3.0",
+    "symfony/serializer": "^3.2",
+    "symfony/validator": "^3.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7.15",
+    "phpunit/php-code-coverage": "^4.0.4"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  }
+}

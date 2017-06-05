@@ -1,0 +1,11 @@
+services:
+    globalgames.collection_object_transformer:
+        class: GlobalGames\Component\ObjectTransformer\CollectionObjectTransformer
+        lazy: true
+        arguments:
+            - '@globalgames.object_transformer'
+
+    globalgames.object_transformer:
+        class: GlobalGames\Component\ObjectTransformer\ObjectTransformer
+        calls:
+            - [ addObjectTransformer, [ '@globalgames.collection_object_transformer' ] ]
