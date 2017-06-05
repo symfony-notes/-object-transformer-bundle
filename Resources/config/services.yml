@@ -1,11 +1,11 @@
 services:
-    globalgames.collection_object_transformer:
-        class: GlobalGames\Component\ObjectTransformer\CollectionObjectTransformer
+    notes.collection_object_transformer:
+        class: SymfonyNotes\ObjectTransformerBundle\Transformer\CollectionObjectTransformer
         lazy: true
         arguments:
-            - '@globalgames.object_transformer'
+            - '@notes.object_transformer'
 
-    globalgames.object_transformer:
-        class: GlobalGames\Component\ObjectTransformer\ObjectTransformer
+    notes.object_transformer:
+        class: SymfonyNotes\ObjectTransformerBundle\Transformer\ObjectTransformer
         calls:
-            - [ addObjectTransformer, [ '@globalgames.collection_object_transformer' ] ]
+            - [ addObjectTransformer, [ '@notes.collection_object_transformer' ] ]

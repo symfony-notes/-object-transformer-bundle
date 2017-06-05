@@ -1,17 +1,16 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace SymfonyNotes\ObjectTransformerBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\Loader;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
-use Symfony\Component\DependencyInjection\Loader;
 
 /**
- * Class ObjectTransformerExtension
- * @package GlobalGames\Bundle\ObjectTransformerBundle\DependencyInjection
+ * Class ObjectTransformerExtension.
  */
 class ObjectTransformerExtension extends Extension
 {
