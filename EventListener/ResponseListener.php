@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SymfonyNotes\ObjectTransformerBundle\Transformer;
+namespace SymfonyNotes\ObjectTransformerBundle\EventListener;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Serializer\SerializerInterface;
