@@ -34,7 +34,7 @@ class ResponseListener
      *
      * @throws UnsupportedExpectedContentTypeException
      */
-    public function onKernelView(GetResponseForControllerResultEvent $event): void
+    public function onKernelView(GetResponseForControllerResultEvent $event)
     {
         $object = $event->getControllerResult();
         $contentType = $event->getRequest()->getContentType();
