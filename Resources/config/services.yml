@@ -9,10 +9,3 @@ services:
         class: SymfonyNotes\ObjectTransformerBundle\Transformer\ObjectTransformer
         calls:
             - [ addObjectTransformer, [ '@notes.collection_object_transformer' ] ]
-
-    notes.response_listener:
-        class: SymfonyNotes\ObjectTransformerBundle\EventListener\ResponseListener
-        arguments:
-            - "@serializer"
-        tags:
-            - { name: kernel.event_listener, event: kernel.view, method: onKernelView, priority: 0 }
