@@ -20,7 +20,7 @@ class ObjectTransformerTest extends TestCase
      */
     private $objectTransformer;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 

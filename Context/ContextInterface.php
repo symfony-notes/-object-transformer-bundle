@@ -9,4 +9,8 @@ namespace SymfonyNotes\ObjectTransformerBundle\Context;
  */
 interface ContextInterface
 {
+    /**
+     * @return mixed
+     */
+    public function getPayload();
 }
